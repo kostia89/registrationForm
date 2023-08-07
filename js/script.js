@@ -53,43 +53,43 @@ testForm.addEventListener('submit', function (event) {
 
   if (firstName.value.length < 2) {
     const error = document.querySelector('[data-name="firstName"]');
-    error.className = 'errorVisible';
+    error.classList.add('errorVisible');
     isValid = false;
   }
   if (countrySelect.value === '') {
     const error = document.querySelector('[data-name="country"]');
-    error.className = 'errorVisible';
+    error.classList.add('errorVisible');
     isValid = false;
   }
   if (!validatePassword(password.value)) {
     const error = document.querySelector('[data-name="password"]');
-    error.className = 'errorVisible';
+    error.classList.add('errorVisible');
     isValid = false;
   }
   if (!validateEmail(email.value)) {
     const error = document.querySelector('[data-name="email"]');
-    error.className = 'errorVisible';
+    error.classList.add('errorVisible');
     isValid = false;
   }
   if (secondName.value.length < 2) {
     const error = document.querySelector('[data-name="secondName"]');
-    error.className = 'errorVisible';
+    error.classList.add('errorVisible');
     isValid = false;
   }
   if (phone.value === '') {
     const error = document.querySelector('[data-name="phone"]');
-    error.className = 'errorVisible';
+    error.classList.add('errorVisible');
     isValid = false;
   }
   if (password.value !== confirmPassword.value) {
     const error = document.querySelector('[data-name="confirmPassword"]');
-    error.className = 'errorVisible';
+    error.classList.add('errorVisible');
     isValid = false;
   }
   if (!agree.checked) {
     // Use "checked" property instead of "value"
     const error = document.querySelector('[data-name="agree"]');
-    error.className = 'errorBg';
+    error.classList.add('errorBg');
     isValid = false;
   }
 
