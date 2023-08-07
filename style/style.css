@@ -126,13 +126,25 @@ select::content {
   line-height: normal;
 }
 .button {
+  transition: 0.3s;
   margin: 0 12px;
-  border: none;
+  border: 1px solid #6ceec7;
   border-radius: 4px;
   width: 165px;
   height: 56px;
-  background-color: #6ceec7;
+  background-color: transparent;
+  color: #6ceec7;
   cursor: pointer;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.button:hover {
+  transition: 0.3s;
+  border: none;
+  background-color: #6ceec7;
+  color: #000;
 }
 .formRight {
   display: flex;
